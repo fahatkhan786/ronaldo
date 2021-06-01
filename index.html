@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/1c2c2462bf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Cristiano</title>
+</head>
+<body>
+	<header>
+        <ul class="nav" id="nav">
+            <li ><a class="active" href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Performance</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Ranking</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="content">
+            <section>
+                <h2>Cristiano ronaldo</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, uis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                <a href="#">Read More</a>
+            </section>
+        </div>
+        <div class="imgbox">
+            <img src="img.png">
+        </div>
+        <div class="social">
+            <ul>
+                <span>follow us at</span>
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            </ul>
+        </div>
+        <span class="menu" id="toggle" onclick="menuToggle()"></span>
+    </div>
+    <div class="about"></div>
+
+    <script type="text/javascript">
+        function menuToggle() {
+            var show = document.getElementById('nav');
+            show.classList.toggle('active')
+            var hide = document.getElementById('toggle');
+            hide.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
